@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<h2>
+    <p class="tituloDestaque">Melhores</p>
+</h2>
+<hr>
+<div class="row">
+    {% for melhor in melhores %}
+        <div class="col-md-3">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{melhor.backdrop_path}}" alt="No image">
+            <div class="card-body">
+               <h5 class="card-title">{{melhor.title}}</h5>
+               <p class="card-text">{{melhor.overview}}</p>
+               <hr>
+               <h4>Nota Média <span class="badge bg-primary">{{melhor.vote_average}}</span></h4>
+            </div>
+           </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
