@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<h2>
+    <p class="tituloDestaque">Família</p>
+</h2>
+<hr>
+<div class="row">
+    {% for familia in familias %}
+        <div class="col-md-3">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{familia.backdrop_path}}" alt="No image">
+            <div class="card-body">
+               <h5 class="card-title">{{familia.title}}</h5>
+               <p class="card-text">{{familia.overview}}</p>
+               <hr>
+               <h4>Nota Média <span class="badge bg-primary">{{familia.vote_average}}</span></h4>
+            </div>
+           </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
