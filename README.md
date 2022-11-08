@@ -1,6 +1,6 @@
 <div align="center">
 
-![](https://uploaddeimagens.com.br/images/004/125/306/full/film_catalog1.png?1667931538)
+![](https://uploaddeimagens.com.br/images/004/126/071/full/movie_catalog.png?1667932826)
 
 </div>
 
