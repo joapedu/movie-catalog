@@ -1,7 +1,5 @@
 <div align="center">
-
-![](https://uploaddeimagens.com.br/images/004/126/071/full/movie_catalog.png?1667932826)
-
+  <img src="https://uploaddeimagens.com.br/images/004/126/071/full/movie_catalog.png?1667932826" width="400" height="550">
 </div>
 
 ---
