@@ -3,7 +3,7 @@
 </div>
 
 ---
-- A film catalog using a API "TheMovieDB" (https://www.themoviedb.org)
+- A movie catalog using a API "TheMovieDB" (https://www.themoviedb.org)
 - The application it's alredy with docker. Make sure you already have docker installed on your machine and just using command:
 
 ```
