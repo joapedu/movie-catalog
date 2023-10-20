@@ -57,19 +57,6 @@ def aclamados():
     
     return render_template("aclamados.html", aclamados=jsondata_acla['results'])
 
-#dramas
-@app.route('/dramas')
-def dramas():
-    url_dramas = "https://api.themoviedb.org/3///discover/movie?with_genres=18&sort_by=vote_average.desc&vote_count.gte=10&api_key=96275fcac06ba8cbe9d9d4e246f32038"
-    
-    resposta_dramas = urllib.request.urlopen(url_dramas)    ##urlopen
-    
-    dados_dramas = resposta_dramas.read()                   ##variável para read
-    
-    jsondata_dramas = json.loads(dados_dramas)              ##transformar em json
-    
-    return render_template("dramas.html", dramas=jsondata_dramas['results'])
-
 #classicos
 @app.route('/classicos')
 def classicos():
@@ -82,19 +69,6 @@ def classicos():
     jsondata_class = json.loads(dados_class)              ##transformar em json
     
     return render_template("classicos.html", classicos=jsondata_class['results'])
-
-#ficção cientifica
-@app.route('/cientifica')
-def cientifica():
-    url_cientifica = "https://api.themoviedb.org/3///discover/movie?with_genres=878&with_cast=500&sort_by=vote_average.desc&api_key=96275fcac06ba8cbe9d9d4e246f32038"
-    
-    resposta_cientifica = urllib.request.urlopen(url_cientifica)    ##urlopen
-    
-    dados_cientifica = resposta_cientifica.read()                   ##variável para read
-    
-    jsondata_cientifica = json.loads(dados_cientifica)              ##transformar em json
-    
-    return render_template("ficcao.html", cientificas=jsondata_cientifica['results'])
 
 @app.route('/melhores')
 def melhores():
