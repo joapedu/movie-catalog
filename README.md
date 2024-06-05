@@ -1,4 +1,4 @@
-# Film Catalog
+# Movie Catalog
 
 ## Project for connect with themoviedb API Dockerizing Flask 🐳🌶
 
